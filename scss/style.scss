@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Sono:wght@200..800&display=swap');
 @font-face {
     font-family: 'Atinmosu';
     src: url('../atinmosu/atinmosu.ttf') format('truetype');
@@ -66,5 +66,57 @@ body {
         background-color: #2a3b4c;
         padding: 1rem;
         border-radius: 0.5rem;
+    }
+}
+
+.alphabets {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+
+    .parts{
+        background-color: #1f2d3d;
+        padding: 1rem;
+        border-radius: 0.5rem;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                font-family: "Sono", monospace;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+#clstr {
+    width: 50%;
+    height: 50%;
+}
+
+.pronouns {
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-style: hidden;
+
+        table, th, td {
+            border: 1px solid #ffffff;
+            padding: 0.5rem;
+        }
+
+        th {
+            background-color: #1f2d3d;
+        }
+
+        td {
+            text-align: center;
+        }
     }
 }
