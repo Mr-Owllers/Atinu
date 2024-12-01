@@ -18,81 +18,36 @@
         <div class="main">
             <div class="links">
                 <a href="/">Home</a>
+                <a href="/alphabets">Alphabets</a>
                 <a href="/grammar">Grammar</a>
                 <a href="/dictionary">Dictionary</a>
                 <a href="/resources">Resources</a>
                 <a href="/contacts">Contacts</a>
             </div>
             <div class="content">
-                <h1>Phonology and Orthography</h1>
-                <h2>Consonants</h2>
-                <p>Atinú has 26 consonants. They are:</p>
-                <img src="images/phonocharts/consonants.png" alt="consonants">
-                <h2>Vowels</h2>
-                <p>And there're 9 vowels, each having a long version (so 18 in total). They are:</p>
-                <img src="images/phonocharts/vowels.png" alt="vowels">
-                <p>(big thanks to @disco_n0stalgia on discord for making these graphs!)</p>
-
-                <h2>Alphabet Order</h2>
-                <p>Atinú's alphabet order/song(?) is in two parts:</p>
-                <div class="alphabets">
-                    <div class="parts">
-                        Vowels:<br>
-                        <ul>
-                            <li>i í</li>
-                            <li>e é</li>
-                            <li>è ê</li>
-                            <li>a á</li>
-                            <li>y ý</li>
-                            <li>u ú</li>
-                            <li>o ó</li>
-                            <li>ò ô</li>
-                            <li>à â</li>
-                        </ul>
-                    </div>
-                    <div class="parts">
-                        Consonants:<br>
-                        <ul>
-                            <li>my ny ño ňa</li>
-                            <li>py by ko ga</li>
-                            <li>ty dy þo ða</li>
-                            <li>fy vy so za</li>
-                            <li>cy ġy śo źa</li>
-                            <li>xy hy qo ja ry ly</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <h1>Grammar</h1>
-                <h2>Phonotactics</h2>
-                <p>Atinú's syllable structure is (C)(C)V(C)(C), where:</p>
+                <h2>Gender</h2>
+                <p>There're 3 genders in Atinú:</p>
                 <ul>
-                    <li>C = consonant</li>
-                    <li>V = vowel</li>
+                    <li>ABSTRACT: ∅</li>
+                    <li>ANIMATE: -o (-so if last letter is vowel)</li>
+                    <li>INANIMATE: -uk (-śuk if last letter is a vowel)</li>
                 </ul>
-                <p>Atinú's phonotactics are pretty simple, but there are some rules to follow:</p>
-                <ul>
-                    <li>
-                        some clusters are illegal, heres an image that shows the legal clusters
-                        <ul>
-                            <li>GREEN: legal clusters</li>
-                            <li>YELLOW: coda clusters</li>
-                            <li>RED: illegal clusters</li>
-                        </ul>
-                        <img src="images/phonocharts/legal-clusters.png" alt="legal clusters" id="clstr">
-                    </li>
-                    <li>double clusters are illegal, they must be broken up by a &lt;q&gt; (example: nn, aa ❌, nqn, aqa ⭕)</li>
-                    <li>&lt;ñ&gt; always needs to be followed by a vowel</li>
-                </ul>
+                <p>
+                    <b>Examples:</b><br>
+                    ABSTRACT: it (human-like), sakan (fish-like), tomo (house-like)<br>
+                    ANIMATE: ito (human), sakano (fish), tomoso (home)<br>
+                    INANIMATE: ituk (dead human, asocial person), sakanuk (dead fish, stupid), tomośuk (house)
+                </p>
+                <p>NOTE: abstract forms can be used as metaphors</p>
                 <h2>Plurality</h2>
                 <p>Atinú has three ways of showing how many of something there is:</p>
                 <ul>
                     <li>SINGULAR: ∅</li>
                     <li>PAUCAL (a few of): -lò (-òl if the last letter is a consonant)</li>
-                    <li>PLURAL: -se (-ses if the last letter is a consonant)</li>
+                    <li>PLURAL: -se (-es if the last letter is a consonant)</li>
                 </ul>
                 <p>
-                    Examples:<br>
+                    <b>Examples:</b><br>
                     SINGULAR: ito (human), sakano (fish), tomośuk (house)<br>
                     PAUCAL: itolò (a few humans), sakanolò (a few fish), tomośukòl (a few houses)<br>
                     PLURAL: itose (humans), sakanose (fish), tomośukes (houses)
@@ -127,35 +82,559 @@
                 <p>There're 8 cases:</p>
                 <ul>
                     <li>NOMINATIVE: ∅</li>
-                    <li>DATIVE: a-</li>
+                    <li>DATIVE: a- (aq- if first letter is a vowel)</li>
                     <li>GENITIVE: no(of) [possessor]</li>
                     <li>ACCUSATIVE: -òf (-lòf if last letter is a vowel)</li>
                     <li>INSTRUMENTAL: sa(with)</li>
                     <li>DIMINUTIVE: -ili (-lili if last letter is i or í)</li>
-                    <li>AUGMENTATIVE: bá- (báq- if first letter is a or á)</li>
+                    <li>AUGMENTATIVE: bá- (báq- if first letter is a vowel)</li>
                     <li>VOCATIVE: ó! oi! ei!</li>
                 </ul>
+                <p><b>Examples:</b></p>
+                <details>
+                    <summary>click to show/hide examples</summary>
+                    <div>
+                        <p>
+                            NOMINATIVE:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>di</th>
+                                            <th>ito</th>
+                                            <th>śil</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>di</th>
+                                        <th>it-o</th>
+                                        <th>śil</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="gloss">art</span></td>
+                                        <td>human<span class="gloss">-ani</span></td>
+                                        <td>walk</td>
+                                    </tr>
+                                    <tr>
+                                        <td>the</td>
+                                        <td>human</td>
+                                        <td>walks</td>
+                                    </tr>
+                                </table>
+                            </div><br>
+                        </p>
+                        <p>
+                            DATIVE:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>di</th>
+                                            <th>ito</th>
+                                            <th>śil</th>
+                                            <th>ami</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>di</th>
+                                        <th>it-o</th>
+                                        <th>śil</th>
+                                        <th>a-mi</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="gloss">art</span></td>
+                                        <td>human<span class="gloss">-ani</span></td>
+                                        <td>walk</td>
+                                        <td><span class="gloss">dat-1sg</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>the</td>
+                                        <td>human</td>
+                                        <td>walks</td>
+                                        <td>towards_me</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </p>
+                        <p>
+                            GENITIVE:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>tomoso</th>
+                                            <th>no</th>
+                                            <th>mi</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>tomo-so</th>
+                                        <th>no</th>
+                                        <th>mi</th>
+                                    </tr>
+                                    <tr>
+                                        <td>house<span class="gloss">-ani</span></td>
+                                        <td><span class="gloss">gen</span></td>
+                                        <td><span class="gloss">1sg</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>my</td>
+                                        <td></td>
+                                        <td>home</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </p>
+                        <p>
+                            ACCUSATIVE:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>di</th>
+                                            <th>ito</th>
+                                            <th>ajolòf</th>
+                                            <th>mi</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>di</th>
+                                        <th>it-o</th>
+                                        <th>ajo-lòf</th>
+                                        <th>mi</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="gloss">art</span></td>
+                                        <td>human<span class="gloss">-ani</span></td>
+                                        <td>walk<span class="gloss">-acc</span></td>
+                                        <td><span class="gloss">1sg</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>the</td>
+                                        <td>human</td>
+                                        <td>comes_for</td>
+                                        <td>me</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </p>
+                        <p>
+                            INSTRUMENTAL:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>di</th>
+                                            <th>ito</th>
+                                            <th>śil</th>
+                                            <th>sa</th>
+                                            <th>mi</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>di</th>
+                                        <th>it-o</th>
+                                        <th>śil</th>
+                                        <th>sa</th>
+                                        <th>mi</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="gloss">art</span></td>
+                                        <td>human<span class="gloss">-ani</span></td>
+                                        <td>walk</td>
+                                        <td><span class="gloss">ins</span></td>
+                                        <td><span class="gloss">1sg</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>the</td>
+                                        <td>human</td>
+                                        <td>walks</td>
+                                        <td>with</td>
+                                        <td>me</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </p>
+                        <p>
+                            DIMINUTIVE:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>di</th>
+                                            <th>itolili</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>di</th>
+                                        <th>ito-lili</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="gloss">art</span></td>
+                                        <td>human<span class="gloss">-dim</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>the</td>
+                                        <td>little_human (child)</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </p>
+                        <p>
+                            AUGMENTATIVE:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>di</th>
+                                            <th>báqito</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>di</th>
+                                        <th>báq-it-o</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="gloss">art</span></td>
+                                        <td><span class="gloss">aug-</span>human<span class="gloss">-ani</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>the</td>
+                                        <td>giant</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </p>
+                        <p>
+                            VOCATIVE:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ó</th>
+                                            <th>ito!</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>ó</th>
+                                        <th>it-o</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="gloss">voc</span></td>
+                                        <td>human<span class="gloss">-ani</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Oh</td>
+                                        <td>human!</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </p>
+                    </div>
+                </details>
                 <h2>Tenses</h2>
                 <p>There're 3 tenses:</p>
                 <ul>
                     <li>PRESENT: ∅</li>
-                    <li>PAST: -eþ</li>
+                    <li>PAST: -eþ (-éþ is last letter is e)</li>
                     <li>FUTURE: śilus a (going to)</li>
                 </ul>
+                <p><b>Examples:</b></p>
+                <details>
+                    <summary>click to show/hide examples</summary>
+                    <div>
+                        <p>
+                            PRESENT:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>di</th>
+                                            <th>ito</th>
+                                            <th>śil</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>di</th>
+                                        <th>it-o</th>
+                                        <th>śil</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="gloss">art</span></td>
+                                        <td>human<span class="gloss">-ani</span></td>
+                                        <td>walk</td>
+                                    </tr>
+                                    <tr>
+                                        <td>the</td>
+                                        <td>human</td>
+                                        <td>walks</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </p>
+                        <p>
+                            PAST:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>di</th>
+                                            <th>ito</th>
+                                            <th>śileþ</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>di</th>
+                                        <th>it-o</th>
+                                        <th>śil-eþ</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="gloss">art</span></td>
+                                        <td>human<span class="gloss">-ani</span></td>
+                                        <td>walk-<span class="gloss">pst</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>the</td>
+                                        <td>human</td>
+                                        <td>walked</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </p>
+                        <p>
+                            FUTURE:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>di</th>
+                                            <th>ito</th>
+                                            <th>śilus a</th>
+                                            <th>śil</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>di</th>
+                                        <th>it-o</th>
+                                        <th>śilus_a</th>
+                                        <th>śil</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="gloss">art</span></td>
+                                        <td>human<span class="gloss">-ani</span></td>
+                                        <td><span class="gloss">aux</span></td>
+                                        <td>walk</td>
+                                    </tr>
+                                    <tr>
+                                        <td>the</td>
+                                        <td>human</td>
+                                        <td>will</td>
+                                        <td>walk</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </p>
+                    </div>
+                </details>
                 <h2>Aspect</h2>
                 <p>Atinú has 3 aspects:</p>
                 <ul>
                     <li>PERFECTIVE: ∅</li>
-                    <li>PROGRESSIVE: -us</li>
-                    <li>HABITUAL: ebo-</li>
+                    <li>PROGRESSIVE: -us (-ús if last letter is u)</li>
+                    <li>HABITUAL: ebo- (eboq- if first letter is vowel)</li>
                 </ul>
+                <p><b>Examples:</b></p>
+                <details>
+                    <summary>click to show/hide examples</summary>
+                    <div>
+                        <p>
+                            PERFECTIVE:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>mi</th>
+                                            <th>múk</th>
+                                            <th>xanuk</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>mi</th>
+                                        <th>múk</th>
+                                        <th>xanuk</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="gloss">1sg</span></td>
+                                        <td>eat</td>
+                                        <td>food</td>
+                                    </tr>
+                                    <tr>
+                                        <td>I</td>
+                                        <td>eat</td>
+                                        <td>food</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </p>
+                        <p>
+                            PROGRESSIVE:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>mi</th>
+                                            <th>ben</th>
+                                            <th>múkus</th>
+                                            <th>xanuk</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>mi</th>
+                                        <th>ben</th>
+                                        <th>múk-us</th>
+                                        <th>xanuk</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="gloss">1sg</span></td>
+                                        <td>be</td>
+                                        <td>eat-<span class="gloss">prog</span></td>
+                                        <td>food</td>
+                                    </tr>
+                                    <tr>
+                                        <td>I</td>
+                                        <td>am</td>
+                                        <td>eating</td>
+                                        <td>food</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </p>
+                        <p>
+                            HABITUAL:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>mi</th>
+                                            <th>ebomúk</th>
+                                            <th>xanuk</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>mi</th>
+                                        <th>ebo-múk</th>
+                                        <th>xanuk</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="gloss">1sg</span></td>
+                                        <td><span class="gloss">hab-</span>eat</td>
+                                        <td>food</td>
+                                    </tr>
+                                    <tr>
+                                        <td>I</td>
+                                        <td>regularly_eat</td>
+                                        <td>food</td>
+                                    </tr>
+                                </table>
+                            </div>
+                    </div>
+                </details>
                 <h2>Mood</h2>
                 <p>There're 3 moods:</p>
                 <ul>
-                    <li>IMPERATIVE: údo-</li>
-                    <li>SUBJUNCTIVE: ví-</li>
+                    <li>IMPERATIVE: údo- (údoq- if first letter is vowel)</li>
+                    <li>SUBJUNCTIVE: ví- (vís- if first letter is vowel)</li>
                     <li>INDICATIVE: ∅</li>
                 </ul>
+                <p><b>Examples:</b></p>
+                <details>
+                    <summary>click to show/hide examples</summary>
+                    <div>
+                        <p>
+                            IMPERATIVE:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ito,</th>
+                                            <th>údomúk!</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>it-o</th>
+                                        <th>údo-múk</th>
+                                    </tr>
+                                    <tr>
+                                        <td>human<span class="gloss">-ani</span>,</td>
+                                        <td><span class="gloss">imp-</span>eat</td>
+                                    </tr>
+                                    <tr>
+                                        <td>human,</td>
+                                        <td>eat!</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </p>
+                        <p>
+                            SUBJUNCTIVE:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>mi</th>
+                                            <th>vímúk</th>
+                                            <th>xanuk</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>mi</th>
+                                        <th>ví-múk</th>
+                                        <th>xanuk</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="gloss">1sg</span></td>
+                                        <td><span class="gloss">subj-</span>eat</td>
+                                        <td>food</td>
+                                    </tr>
+                                    <tr>
+                                        <td>I</td>
+                                        <td>wish_to_eat</td>
+                                        <td>food</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </p>
+                        <p>
+                            INDICATIVE:<br>
+                            <div class="glossing">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>mi</th>
+                                            <th>múk</th>
+                                            <th>xanuk</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <th>mi</th>
+                                        <th>múk</th>
+                                        <th>xanuk</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="gloss">1sg</span></td>
+                                        <td>eat</td>
+                                        <td>food</td>
+                                    </tr>
+                                    <tr>
+                                        <td>I</td>
+                                        <td>eat</td>
+                                        <td>food</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </p>
+                    </div>
+                </details>
                 <h2>Articles</h2>
                 <p>Atinú has 2 articles:</p>
                 <ul>
@@ -171,12 +650,288 @@
                     <li>POSSESSEE > POSSESSOR</li>
                     <li>AUX VERB > VERB</li>
                 </ul>
+                <p><b>Examples:</b></p>
+                <!--
+                1. di ito múk di sakanuk
+                1. the human eats the fish
+                2. mi feí adi lili sakanuk
+                2. i look at the litte fish
+                3. di sakanuk ben en di tomoso
+                3. the fish is in the home
+                4. di ito ben en tomoso no mi
+                4. the human is in my home
+                5. di ito śilus a jiqy di tomoso
+                5. the human will leave the home
+                -->
+                <details>
+                    <summary>click to show/hide examples</summary>
+                    <div>
+                        <div class="glossing">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>di</th>
+                                        <th>ito</th>
+                                        <th>múk</th>
+                                        <th>di</th>
+                                        <th>sakanuk</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <th>di</th>
+                                    <th>it-o</th>
+                                    <th>múk</th>
+                                    <th>di</th>
+                                    <th>sakan-uk</th>
+                                </tr>
+                                <tr>
+                                    <td><span class="gloss">art</span></td>
+                                    <td>human<span class="gloss">-ani</span></td>
+                                    <td>eat</td>
+                                    <td><span class="gloss">art</span></td>
+                                    <td>fish<span class="gloss">-inam</span></td>
+                                </tr>
+                                <tr>
+                                    <td>the</td>
+                                    <td>human</td>
+                                    <td>eats</td>
+                                    <td>the</td>
+                                    <td>fish</td>
+                                </tr>
+                            </table>
+                        </div><br>
+                        <div class="glossing">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>mi</th>
+                                        <th>feí</th>
+                                        <th>adi</th>
+                                        <th>lili</th>
+                                        <th>sakanuk</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <th>mi</th>
+                                    <th>feí</th>
+                                    <th>a-di</th>
+                                    <th>lili</th>
+                                    <th>sakan-uk</th>
+                                </tr>
+                                <tr>
+                                    <td><span class="gloss">1sg</span></td>
+                                    <td>look</td>
+                                    <td><span class="gloss">dat-art</span></td>
+                                    <td>little</td>
+                                    <td>fish<span class="gloss">-inam</span></td>
+                                </tr>
+                                <tr>
+                                    <td>I</td>
+                                    <td>look</td>
+                                    <td>at</td>
+                                    <td>the little</td>
+                                    <td>fish</td>
+                                </tr>
+                            </table>
+                        </div><br>
+                        <div class="glossing">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>di</th>
+                                        <th>sakanuk</th>
+                                        <th>ben</th>
+                                        <th>en</th>
+                                        <th>di</th>
+                                        <th>tomoso</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <th>di</th>
+                                    <th>sakan-uk</th>
+                                    <th>ben</th>
+                                    <th>en</th>
+                                    <th>di</th>
+                                    <th>tomo-so</th>
+                                </tr>
+                                <tr>
+                                    <td><span class="gloss">art</span></td>
+                                    <td>fish<span class="gloss">-inam</span></td>
+                                    <td>be</td>
+                                    <td>in</td>
+                                    <td><span class="gloss">art</span></td>
+                                    <td>home<span class="gloss">-ani</span></td>
+                                </tr>
+                                <tr>
+                                    <td>the</td>
+                                    <td>fish</td>
+                                    <td>is</td>
+                                    <td>in</td>
+                                    <td>the</td>
+                                    <td>home</td>
+                                </tr>
+                            </table>
+                        </div><br>
+                        <div class="glossing">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>di</th>
+                                        <th>ito</th>
+                                        <th>ben</th>
+                                        <th>en</th>
+                                        <th>tomoso</th>
+                                        <th>no</th>
+                                        <th>mi</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <th>di</th>
+                                    <th>it-o</th>
+                                    <th>ben</th>
+                                    <th>en</th>
+                                    <th>tomo-so</th>
+                                    <th>no</th>
+                                    <th>mi</th>
+                                </tr>
+                                <tr>
+                                    <td><span class="gloss">art</span></td>
+                                    <td>human<span class="gloss">-ani</span></td>
+                                    <td>be</td>
+                                    <td>in</td>
+                                    <td>home<span class="gloss">-ani</span></td>
+                                    <td><span class="gloss">gen</span></td>
+                                    <td><span class="gloss">1sg</span></td>
+                                </tr>
+                                <tr>
+                                    <td>the</td>
+                                    <td>human</td>
+                                    <td>is</td>
+                                    <td>in</td>
+                                    <td>my</td>
+                                    <td></td>
+                                    <td>home</td>
+                                </tr>
+                            </table>
+                        </div><br>
+                        <div class="glossing">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>di</th>
+                                        <th>ito</th>
+                                        <th>śilus a</th>
+                                        <th>jiqy</th>
+                                        <th>di</th>
+                                        <th>tomoso</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <th>di</th>
+                                    <th>it-o</th>
+                                    <th>śilus_a</th>
+                                    <th>jiqy</th>
+                                    <th>di</th>
+                                    <th>tomo-so</th>
+                                </tr>
+                                <tr>
+                                    <td><span class="gloss">art</span></td>
+                                    <td>human<span class="gloss">-ani</span></td>
+                                    <td><span class="gloss">aux</span></td>
+                                    <td>leave</td>
+                                    <td><span class="gloss">art</span></td>
+                                    <td>home<span class="gloss">-ani</span></td>
+                                </tr>
+                                <tr>
+                                    <td>the</td>
+                                    <td>human</td>
+                                    <td>will</td>
+                                    <td>leave</td>
+                                    <td>the</td>
+                                    <td>home</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </details>
                 <h2>Valency-Changing Operations</h2>
                 <p>There're 2 valency-changing operations:</p>
                 <ul>
                     <li>PASSIVE: ben (to be)</li>
                     <li>CAUSATIVE: dòźi (to cause)</li>
                 </ul>
+                <p><b>Examples:</b></p>
+                <!--
+                1. mi ben di sakano
+                1. i am the fish
+                2. mi dòźi di sakano
+                2. i cause the fish to live
+                -->
+                <details>
+                    <summary>click to show/hide examples</summary>
+                    <div>
+                        <div class="glossing">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>mi</th>
+                                        <th>ben</th>
+                                        <th>di</th>
+                                        <th>sakano</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <th>mi</th>
+                                    <th>ben</th>
+                                    <th>di</th>
+                                    <th>sakan-o</th>
+                                </tr>
+                                <tr>
+                                    <td><span class="gloss">1sg</span></td>
+                                    <td>be</td>
+                                    <td><span class="gloss">art</span></td>
+                                    <td>fish<span class="gloss">-ani</span></td>
+                                </tr>
+                                <tr>
+                                    <td>I</td>
+                                    <td>am</td>
+                                    <td>the</td>
+                                    <td>fish</td>
+                                </tr>
+                            </table>
+                        </div><br>
+                        <div class="glossing">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>mi</th>
+                                        <th>dòźi</th>
+                                        <th>di</th>
+                                        <th>sakano</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <th>mi</th>
+                                    <th>dòźi</th>
+                                    <th>di</th>
+                                    <th>sakan-o</th>
+                                </tr>
+                                <tr>
+                                    <td><span class="gloss">1sg</span></td>
+                                    <td>cause</td>
+                                    <td><span class="gloss">art</span></td>
+                                    <td>fish<span class="gloss">-ani</span></td>
+                                </tr>
+                                <tr>
+                                    <td>I</td>
+                                    <td>give_life_to</td>
+                                    <td>the</td>
+                                    <td>fish</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </details>
                 <h2>Word formation</h2>
                 <div class="table">
                     <table>
@@ -195,6 +950,7 @@
                             <td>HAB-</td>
                             <td>baseform</td>
                             <td>-PRG</td>
+                            <td>-ACC</td>
                             <td>-TNS</td>
                         </tr>
                     </table>

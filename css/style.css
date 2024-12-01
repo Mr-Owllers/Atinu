@@ -66,19 +66,12 @@ body {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .alphabets .parts {
   background-color: #1f2d3d;
   padding: 1rem;
   border-radius: 0.5rem;
-}
-.alphabets .parts ul {
-  list-style-type: none;
-}
-.alphabets .parts ul li {
-  font-family: "Sono", monospace;
-  font-weight: bold;
 }
 
 #clstr {
@@ -105,6 +98,43 @@ body {
 }
 .table table td {
   text-align: center;
+}
+
+.gloss {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+.glossing {
+  border: 1px solid #1f2d3d;
+  border-radius: 20px;
+  overflow: hidden;
+  display: inline-block;
+}
+.glossing table {
+  border-collapse: collapse;
+  border-style: hidden;
+}
+.glossing table table, .glossing table th, .glossing table td {
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid #1f2d3d;
+}
+.glossing table thead th {
+  background-color: #1f2d3d;
+}
+
+details summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.mosu {
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
