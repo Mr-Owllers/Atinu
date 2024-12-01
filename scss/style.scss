@@ -90,7 +90,6 @@ body {
 
 #clstr {
     width: 50%;
-    height: 50%;
 }
 
 .table {
@@ -176,8 +175,41 @@ a {
     }
 }
 
-code {
+.code {
     background-color: $grey;
     border-radius: 0.25rem;
     border: 1px solid $dark-grey;
+    display: inline-block;
+    word-break: break-all;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+
+        .links {
+            gap: 1rem;
+            padding: 0.5rem;
+            align-self: normal;
+            // put all items in 2 rows
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        
+            a {
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    .alphabets {
+        flex-direction: column;
+    }
+
+    .mosu {
+        width: 100%;
+    }
+
+    #clstr {
+        width: 100%;
+    }
 }

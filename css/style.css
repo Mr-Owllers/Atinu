@@ -76,7 +76,6 @@ body {
 
 #clstr {
   width: 50%;
-  height: 50%;
 }
 
 .table {
@@ -150,10 +149,37 @@ a:hover {
   text-decoration: underline;
 }
 
-code {
+.code {
   background-color: #1f2d3d;
   border-radius: 0.25rem;
   border: 1px solid #141f2c;
+  display: inline-block;
+  word-break: break-all;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  .main .links {
+    gap: 1rem;
+    padding: 0.5rem;
+    align-self: normal;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main .links a {
+    padding: 0.5rem;
+  }
+  .alphabets {
+    flex-direction: column;
+  }
+  .mosu {
+    width: 100%;
+  }
+  #clstr {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
