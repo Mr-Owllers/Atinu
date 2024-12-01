@@ -86,24 +86,24 @@ body {
   height: 50%;
 }
 
-.pronouns {
+.table {
   border: 1px solid #ffffff;
   border-radius: 20px;
   overflow: hidden;
 }
-.pronouns table {
+.table table {
   width: 100%;
   border-collapse: collapse;
   border-style: hidden;
 }
-.pronouns table table, .pronouns table th, .pronouns table td {
+.table table table, .table table th, .table table td {
   border: 1px solid #ffffff;
   padding: 0.5rem;
 }
-.pronouns table th {
+.table table th {
   background-color: #1f2d3d;
 }
-.pronouns table td {
+.table table td {
   text-align: center;
 }
 
