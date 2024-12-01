@@ -166,3 +166,18 @@ iframe {
     min-width: 100%;
     height: 75vh;
 }
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+code {
+    background-color: $grey;
+    border-radius: 0.25rem;
+    border: 1px solid $dark-grey;
+}

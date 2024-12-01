@@ -142,4 +142,18 @@ iframe {
   height: 75vh;
 }
 
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  background-color: #1f2d3d;
+  border-radius: 0.25rem;
+  border: 1px solid #141f2c;
+}
+
 /*# sourceMappingURL=style.css.map */
