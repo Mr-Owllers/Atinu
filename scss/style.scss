@@ -96,6 +96,8 @@ body {
     border: 1px solid #ffffff;
     border-radius: 20px;
     overflow: hidden;
+    max-width: fit-content;
+    white-space: nowrap;
 
     table {
         width: 100%;
@@ -104,7 +106,7 @@ body {
 
         table, th, td {
             border: 1px solid #ffffff;
-            padding: 0.5rem;
+            padding: 1rem;
         }
 
         th {
@@ -117,6 +119,7 @@ body {
     }
 }
 
+
 .gloss {
     font-variant: small-caps;
     font-weight: bold;
@@ -126,14 +129,15 @@ body {
     border: 1px solid $grey;
     border-radius: 20px;
     overflow: hidden;
-    display: inline-block;
+    max-width: fit-content;
+    white-space: nowrap;
     
     table {
         border-collapse: collapse;
         border-style: hidden;
 
         table, th, td {
-            padding: 0.5rem;
+            padding: 0.75rem;
             text-align: center;
             border: 1px solid $grey;
         }
@@ -186,12 +190,14 @@ a {
 @media screen and (max-width: 768px) {
     .main {
         flex-direction: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 1rem;
 
         .links {
             gap: 1rem;
             padding: 0.5rem;
             align-self: normal;
-            // put all items in 2 rows
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         
@@ -211,5 +217,16 @@ a {
 
     #clstr {
         width: 100%;
+    }
+
+    .table {
+        overflow-x: auto;
+        scrollbar-width: thin;
+        max-width: fit-content;
+    }
+
+    .glossing {
+        overflow-x: auto;
+        scrollbar-width: thin;
     }
 }

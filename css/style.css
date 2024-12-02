@@ -82,6 +82,8 @@ body {
   border: 1px solid #ffffff;
   border-radius: 20px;
   overflow: hidden;
+  max-width: fit-content;
+  white-space: nowrap;
 }
 .table table {
   width: 100%;
@@ -90,7 +92,7 @@ body {
 }
 .table table table, .table table th, .table table td {
   border: 1px solid #ffffff;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .table table th {
   background-color: #1f2d3d;
@@ -108,14 +110,15 @@ body {
   border: 1px solid #1f2d3d;
   border-radius: 20px;
   overflow: hidden;
-  display: inline-block;
+  max-width: fit-content;
+  white-space: nowrap;
 }
 .glossing table {
   border-collapse: collapse;
   border-style: hidden;
 }
 .glossing table table, .glossing table th, .glossing table td {
-  padding: 0.5rem;
+  padding: 0.75rem;
   text-align: center;
   border: 1px solid #1f2d3d;
 }
@@ -160,6 +163,9 @@ a:hover {
 @media screen and (max-width: 768px) {
   .main {
     flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 1rem;
   }
   .main .links {
     gap: 1rem;
@@ -179,6 +185,15 @@ a:hover {
   }
   #clstr {
     width: 100%;
+  }
+  .table {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    max-width: fit-content;
+  }
+  .glossing {
+    overflow-x: auto;
+    scrollbar-width: thin;
   }
 }
 
