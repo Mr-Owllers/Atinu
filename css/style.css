@@ -189,11 +189,16 @@ a:hover {
   .table {
     overflow-x: auto;
     scrollbar-width: thin;
-    max-width: fit-content;
+  }
+  .table table th, .table table td {
+    padding: 0.5rem;
   }
   .glossing {
     overflow-x: auto;
     scrollbar-width: thin;
+  }
+  .glossing table th, .glossing table td {
+    padding: 0.5rem;
   }
 }
 

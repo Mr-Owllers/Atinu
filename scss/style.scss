@@ -222,11 +222,22 @@ a {
     .table {
         overflow-x: auto;
         scrollbar-width: thin;
-        max-width: fit-content;
+
+        table {
+            th, td {
+                padding: 0.5rem;
+            }
+        }
     }
 
     .glossing {
         overflow-x: auto;
         scrollbar-width: thin;
+
+        table {
+            th, td {
+                padding: 0.5rem;
+            }
+        }
     }
 }
