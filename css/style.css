@@ -1,205 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Sono:wght@200..800&display=swap");
-@font-face {
-  font-family: "Atinmosu";
-  src: url("../atinmosu/atinmosu.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 * {
   font-family: "Lexend", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-wrap: balance;
 }
 
 body {
-  background-color: #141f2c;
-  color: #ffffff;
-}
-
-.heading {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-}
-.heading h1 {
-  margin: 0;
-}
-
-.atinmosu {
-  font-family: "Atinmosu", sans-serif;
-}
-
-.main {
-  display: flex;
-  gap: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-.main .links {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  background-color: #2a3b4c;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  align-self: flex-start;
-}
-.main .links a {
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #1f2d3d;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  text-align: center;
-  transition: background-color 0.3s;
-}
-.main .links a:hover {
-  background-color: #2a3b4c;
-}
-.main .content {
-  flex: 1;
-  background-color: #2a3b4c;
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-
-.alphabets {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.alphabets .parts {
-  background-color: #1f2d3d;
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-
-#clstr {
-  width: 50%;
-}
-
-.table {
-  border: 1px solid #ffffff;
-  border-radius: 20px;
-  overflow: hidden;
-  max-width: fit-content;
-  white-space: nowrap;
-}
-.table table {
-  width: 100%;
-  border-collapse: collapse;
-  border-style: hidden;
-}
-.table table table, .table table th, .table table td {
-  border: 1px solid #ffffff;
-  padding: 1rem;
-}
-.table table th {
-  background-color: #1f2d3d;
-}
-.table table td {
-  text-align: center;
-}
-
-.gloss {
-  font-variant: small-caps;
-  font-weight: bold;
-}
-
-.glossing {
-  border: 1px solid #1f2d3d;
-  border-radius: 20px;
-  overflow: hidden;
-  max-width: fit-content;
-  white-space: nowrap;
-}
-.glossing table {
-  border-collapse: collapse;
-  border-style: hidden;
-}
-.glossing table table, .glossing table th, .glossing table td {
-  padding: 0.75rem;
-  text-align: center;
-  border: 1px solid #1f2d3d;
-}
-.glossing table thead th {
-  background-color: #1f2d3d;
-}
-
-details summary {
-  font-weight: bold;
-  cursor: pointer;
-}
-
-img {
-  max-width: 100%;
-}
-
-.mosu {
-  width: 35%;
-}
-
-iframe {
-  min-width: 100%;
-  height: 75vh;
+  background: #16361c;
+  color: #fae2c6;
+  font-size: 1.2rem;
 }
 
 a {
-  color: #ffffff;
-  text-decoration: none;
+  color: #fae2c6;
 }
 a:hover {
-  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  color: #fae2c6;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+.nav a {
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  border: 1px solid #fae2c6;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.nav a:hover {
+  background: #fae2c6;
+  color: #16361c;
+}
+
+.head {
+  text-align: center;
+}
+.head h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.main {
+  border: 1px solid #fae2c6;
+  padding: 1rem 2rem;
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.table {
+  border: 1px solid #fae2c6;
+  display: flex;
+  flex-direction: column;
+}
+.table .row {
+  display: flex;
+  flex-direction: row;
+}
+.table .row .item {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #fae2c6;
+  text-align: center;
+}
+.table .row .h {
+  font-weight: 700;
+  background: #122e18;
 }
 
 .code {
-  background-color: #1f2d3d;
-  border-radius: 0.25rem;
-  border: 1px solid #141f2c;
-  display: inline-block;
+  background-color: #122e18;
+  border: 1px solid #fae2c6;
   word-break: break-all;
-}
-
-@media screen and (max-width: 768px) {
-  .main {
-    flex-direction: column;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    gap: 1rem;
-  }
-  .main .links {
-    gap: 1rem;
-    padding: 0.5rem;
-    align-self: normal;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .main .links a {
-    padding: 0.5rem;
-  }
-  .alphabets {
-    flex-direction: column;
-  }
-  .mosu {
-    width: 100%;
-  }
-  #clstr {
-    width: 100%;
-  }
-  .table {
-    overflow-x: auto;
-    scrollbar-width: thin;
-  }
-  .table table th, .table table td {
-    padding: 0.5rem;
-  }
-  .glossing {
-    overflow-x: auto;
-    scrollbar-width: thin;
-  }
-  .glossing table th, .glossing table td {
-    padding: 0.5rem;
-  }
+  width: fit-content;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

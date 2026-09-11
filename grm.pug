@@ -1,0 +1,112 @@
+extends layout.pug
+
+block title
+    title Grammar
+
+block body
+    .head
+        img(src="/static/atinu.png", alt="Atinú logo", width="100px")
+        h1 Grammar
+        p the core of any language
+    .main
+        h2 gender
+        p
+        | as explained in the philosophy section of the homepage, there are 3 genders in Atinú:
+        ul 
+            li <b>xert</b> (heart/abstract/root): ∅<br>&emsp;it [humanity], sakan [peace], tomo [housing]
+            li <b>oso</b> (animate/alive): -o (-so for vowel-ending words)<br>&emsp;ito [human], sakano [fish], tomoso [home]
+            li <b>śuk</b> (inanimate/dead): -uk (-śuk for vowel-ending words)<br>&emsp;ituk [corpse], sakanuk [idiot], tomośuk [house]
+
+        h2 plurality
+        ul
+            li <b>singular</b>: ∅<br>&emsp;it [humanity], sakano [fish], tomośuk [house]
+            li <b>paucal</b> (a few): -ól (-ló for vowel-ending words)<br>&emsp;itól [some humanity], sakanoló [a few fish], tomośukól [a few houses]
+            li <b>plural</b>: -es (-se for vowel-ending words)<br>&emsp;ites [a lot of humanity], sakanose [many fish], tomośukes [many houses]
+
+        h2 pronouns
+        .table
+            .row 
+                .item.h
+                .item.h 1st person
+                .item.h 2nd person
+                .item.h 3rd person (oso)
+                .item.h 3rd person (śuk)
+            .row
+                .item.h singular
+                .item mi
+                .item ti
+                .item lo 
+                .item síe
+            .row
+                .item.h plural 
+                .item nos
+                .item vos
+                .item los
+                .item síep
+
+        h2 cases
+        p
+        | there are 6 cases: 
+        ul
+            li <b>nominative</b>: ∅<br>&emsp;di ito pode [the person walks]
+            li <b>dative</b>: a- (aq- for vowels)<br>&emsp;di ito pode ami [the person walks to me]
+            li <b>genitive</b>: -no (-yno for consonants)<br>&emsp;di ito pode atomoso mino [the person walks to my home]<br>
+            | &emsp;NOTE: you could also say "di ito pode atomoso <b>no mi</b>", both work fine 
+            li <b>dimunitive</b>: -il (-lil for vowels)<br>&emsp;di itilo pode a di tomolilo [the tiny person walks to the tiny house]
+            li <b>augmentative</b>: -ák (-bák for vowels)<br>&emsp;di itáko pode a di tomobáko [the big person walks to the big house]
+            li <b>vocative</b>: ó! oi! ei!<br>&emsp;ó! ito, údopode atomolilo mino! [hey! person, walk to my tiny house!]
+
+        h2 tenses
+        ul
+            li <b>present</b>: ∅<br>&emsp;di ito pode [the person walks]
+            li <b>past</b>: -eþ (-éþ if last letter is e)<br>&emsp;di ito podéþ [the person walked]
+            li <b>future</b>: couko a<br>&emsp;di ito coukus a pode [the person is going to walk]
+
+        h2 aspect 
+        ul
+            li <b>perfective</b>: ∅<br>&emsp;di ito pode [the person walks]
+            li <b>progressive</b>: -us (omit last vowel)<br>&emsp;di ito podus [the person is walking]
+            li <b>habitual</b>: ebo- (eboq- for vowels)<br>&emsp;di ito ebopode ses dia [the person walks everyday]
+
+        h2 mood
+        ul
+            li <b>indicative</b>: ∅<br>&emsp;di ito pode [the person walks]
+            li <b>imperative</b>: údo- (údon- for vowels)<br>&emsp;údopode atomolilo mino! [walk to my tiny house!]
+            li <b>subjunctive</b>: ví- (vís- for vowels)<br>&emsp;di ito vípode [the person wishes to walk]
+
+        h2 syntax
+        ul
+            li <b>word order</b>: SVO (subject-verb-object)<br>&emsp;di ito pode ami [the person walks to me]
+            li <b>adjectives</b>: A-N<br>&emsp;di itilo pode a di roxot tomolilo mino [the tiny person walks to my tiny red house]
+            li <b>adpositions</b>: prepositions<br>&emsp;di ito pode im di tomolilo [the person walks in the tiny house]
+            li possessee → possessor<br>&emsp;di tomolilo mino [my tiny house]
+            li aux verb → main verb<br>&emsp;di ito coukus a pode ami [the person is going to walk to me]
+
+        h2 valency-changing operations
+        ul
+            li <b>causative</b>: duz<br>&emsp;di ito duz pode ami [the person makes me walk]
+            li <b>passive</b>: èrhal<br>&emsp;di ito èrhal pode ami [the person is walked by me]
+
+        h2 word formation
+        .table 
+            .row 
+                .item.h noun
+                .item DAT-
+                .item root
+                .item -DIM/AUG
+                .item -GND
+                .item -PLUR
+                .item -GEN
+            .row
+                .item.h verb
+                .item MOD-
+                .item HAB-
+                .item root
+                .item -PRG
+                .item -TNS
+                .item
+
+        p
+        | example of what it would look like to have all affixes at once:<br>
+        | noun: atomoliloseno<br>
+        | verb: vísebopoduseþ

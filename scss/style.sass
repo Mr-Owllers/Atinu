@@ -1,0 +1,80 @@
+// var
+$bg: #16361c
+$bgh: #122e18
+$fg: #fae2c6
+
+// css
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Sono:wght@200..800&display=swap')
+
+*
+    font-family: 'Lexend', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+    text-wrap: balance
+
+body
+    background: $bg
+    color: $fg
+    font-size: 1.2rem
+
+a
+    color: $fg
+
+    &:hover
+        cursor: pointer
+
+.nav
+    display: flex
+    justify-content: space-around
+    color: $fg
+    padding: 1rem
+    flex-wrap: wrap
+    a
+        text-decoration: none
+        font-weight: 700
+        margin-bottom: 0.5rem
+        border: 1px solid $fg
+        padding: 0.5rem 1rem
+        transition: all 0.3s ease-in-out
+
+        &:hover
+            background: $fg
+            color: $bg
+
+.head
+    text-align: center
+    
+    h1
+        margin: 0
+        font-size: 2.5rem
+
+.main
+    border: 1px solid $fg
+    padding: 1rem 2rem
+    width: 70%
+    margin: 2rem auto
+
+.table
+    border: 1px solid $fg
+    display: flex
+    flex-direction: column
+
+    .row
+        display: flex
+        flex-direction: row
+
+        .item
+            flex: 1
+            padding: 0.5rem
+            border: 1px solid $fg
+            text-align: center
+
+        .h
+            font-weight: 700
+            background: $bgh
+
+.code
+    background-color: $bgh
+    border: 1px solid $fg
+    word-break: break-all
+    width: fit-content
+    padding: 0.5rem
+    margin: 0.5rem 0

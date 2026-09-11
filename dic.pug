@@ -1,0 +1,51 @@
+extends layout.pug
+
+block title
+    title Dictionary
+
+block body
+    .head
+        img(src="/static/atinu.png", alt="Atinú logo", width="100px")
+        h1 Dictionary
+        p "what does anything mean??"
+    .main
+        h2 IPA 
+        h3 vowels
+        img(src="/static/vowels.png", alt="vowel chart")
+        h3 consonants
+        img(src="/static/consonants.png", alt="consonant chart")
+        p credits to @disco_n0stalgia for the above graphs
+
+        h2 writing system and words
+        p
+        | everything about the writing system and words can be found in <a href="/static/Atinmosi.pdf" target="_blank">Atinmosi.pdf (3.1MB)</a><br>
+        | i apologise for the terrible handwriting in advance...
+
+        h2 phonotactics
+        ul
+            li CCVCC
+            li no double letters allowed, split them using "q" like "ll" → "lql"
+            li for double vowels, just use the long vowel, like aa → á
+            li ñ is always followed by a vowel
+            
+        h2 numbers
+        p Atinú uses decimal numbers, the symbols are already in the PDF, but here is a chart for reference:
+        img(src="/static/numbers.png", alt="number chart")
+        p
+        | to write numbers larger than 10 in words, just write it like X(o)ðuzatY [X: number in tens place, Y: number in ones place]<br>
+        | add the "o" between X and ðuz when the last letter of X is a consonant<br>
+        | optionally, add the "o" if the last letter of X is an "e" if you want to sound fancy<br>
+        | examples: 11 = ðuzatun, 20 = doðuz, 22 = doðuzatdo, 30 = þreðuz/þreoðuz, 40 = catroðuz
+        p 
+        | 100 is hijon<br>
+        | X00 is just X hijon, not one word like Xðuz<br>
+        | X0Y is X hijonatY<br>
+        | examples: 200 = do hijon, 222 = do hijon doðuzatdo, 300 = þre hijon, 404 = catr hijonatcatr<br>
+        | rest of the bigger numbers follow the same rules as hijon
+        p
+        | 1000 is kiro<br>
+        | million is mili<br>
+        | billion is bili<br>
+        | and trillion is... you guessed it! trili<br>
+        | also here's an example of a big number: 9,234,567,891 = "nove bili do hijon þreoðuzatcatr mili fuif hijon rogúðuzatsyþ kiro ojo hijon noveoðuzatun"<br>
+        | looks complicated but its literally the same as english, "nine billion two hundred thirty-four million five hundred sixty-seven thousand eight hundred ninety-one" :P
