@@ -11,10 +11,13 @@ $fg: #fae2c6
     font-family: 'Lexend', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
     text-wrap: balance
 
+html
+    font-size: 20px
+
 body
     background: $bg
     color: $fg
-    font-size: 1.2rem
+    font-size: 1rem
 
 a
     color: $fg
@@ -34,8 +37,7 @@ a
     a
         text-decoration: none
         font-weight: 700
-        font-size: 1.5rem
-        margin-bottom: 0.5rem
+        font-size: 1.2rem
         padding: 0.5rem 1rem
         transition: all 0.2s linear
 
@@ -53,7 +55,7 @@ a
 .main
     border: 1px solid $fg
     padding: 1rem 2rem
-    width: 70%
+    width: min(1024px, calc(100% - 100px))
     margin: 2rem auto
 
 .flow

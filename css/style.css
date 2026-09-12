@@ -5,10 +5,14 @@
   text-wrap: balance;
 }
 
+html {
+  font-size: 20px;
+}
+
 body {
   background: #16361c;
   color: #fae2c6;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 a {
@@ -30,8 +34,7 @@ a:hover {
 .nav a {
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
   padding: 0.5rem 1rem;
   transition: all 0.2s linear;
 }
@@ -51,7 +54,7 @@ a:hover {
 .main {
   border: 1px solid #fae2c6;
   padding: 1rem 2rem;
-  width: 70%;
+  width: min(1024px, 100% - 100px);
   margin: 2rem auto;
 }
 
